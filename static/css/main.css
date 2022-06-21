@@ -3576,10 +3576,6 @@ input, select, textarea {
 				padding: 6em 0 2em 0 ;
 			}
 
-				#banner > .inner .content p br {
-					display: none;
-				}
-
 				#banner.major {
 					padding: 8em 0 4em 0 ;
 				}
@@ -3777,6 +3773,46 @@ input, select, textarea {
 			}
 
 		}
+
+.tag{
+	font-size: 14px; 
+	padding: 4px 14px; 
+	border-radius: 10px;
+	margin-left: 10px;
+}
+.firsttag{
+	margin-left: 0px !important;
+}
+.python{
+	background-color: #8ea9e8;
+}
+.python::before{
+	content: 'PYTHON';
+}
+.csharp{
+	background-color: #87c5a4;
+}
+.csharp::before{
+	content:'C#';
+}
+.java{
+	background-color: #ec8d81;
+}
+.java::before{
+	content: 'JAVA';
+}
+.html{
+	background-color: #6fc3df;
+}
+.html::before{
+	content:'HTML5';
+}
+.css{
+	background-color: #DDAF82;
+}
+.css::before{
+	content:'CSS3';
+}
 
 /* Menu */
 

@@ -160,15 +160,6 @@
 		@include breakpoint('<=xsmall') {
 			@include padding(4em, 0, (2em, 0, 0, 0));
 
-			> .inner {
-				.content {
-					p {
-						br {
-							display: none;
-						}
-					}
-				}
-			}
 
 			&.major {
 				@include padding(6em, 0, (2em, 0, 0, 0));

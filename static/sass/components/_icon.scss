@@ -53,13 +53,13 @@
 
 			&:hover {
 				&:before {
-					background-color: _palette(accent1);
+					background-color: _palette(highlight);
 				}
 			}
 
 			&:active {
 				&:before {
-					background-color: desaturate(darken(_palette(accent1), 15), 5);
+					background-color: desaturate(darken(_palette(highlight), 15), 5);
 				}
 			}
 		}
