@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <html>
+	
 	<head>
 		<title>Evan S. Regot | Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/css/main.css" />
+		<link rel="stylesheet" href="static/css/main.css" />		
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Racing+Sans+One&display=swap" rel="stylesheet">
@@ -26,7 +28,7 @@
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="resume.html">Resume</a></li>
-					<li><a href="languages.html">Projects &amp Coursework</a></li>
+					<li><a href="projects.html">Projects &amp Coursework</a></li>
 					<li><a href="contact.html">Contact Me</a></li>
 				</ul>
 			</nav>
@@ -37,7 +39,7 @@
 						<img src="./static/images/pic07.jpg" alt="" />
 					</span>
 					<header class="major">
-						<h1 style="font-family:'Press Start 2P', cursive; letter-spacing: -4px;" >Projects</h1>
+						<h1 class="title">Projects</h1>
 					</header>
 					<div class="content">
 						<p>A few of the projects I have worked on<br /></p>
@@ -46,43 +48,92 @@
 			</section>
 			<!-- Projects -->
 			<div id="main">
-				<!-- Project 1 -->
+				<!-- Project -->
 				<section id="one">
 					<div class="inner">
 						<header class="major alt style2">
-							<h3>Portfolio Website</h3>
+							<h3>Python/Flask Portfolio Website</h3>
 						</header>
-						<h3><span class="firsttag tag html"></span><span class="tag css"></span><span class="tag python"></span></h3>
+						<h3><span class="firsttag tag python"></span><span class="tag web"></span></h3>
 						<p>This portfolio website was created using the Python web framework Flask</p>
 						<ul class="actions">
-							<li><a href="https://github.com/eregot/DevPortfolio" target="_blank"class="button">View Project Page</a></li>
+							<li><a href="https://github.com/eregot/DevPortfolio" target="_blank" class="button">View Project on Github</a></li>
 						</ul>
 					</div>
 				</section>
-				<!-- Project 2 -->
-				<section id="one" style="background-color: #242943">
+				<!-- Project -->
+				<section id="one" class="every-other">
 					<div class="inner">
 						<header class="major alt style2">
-							<h3>Sample Project</h3>
+							<h3>C#/.NET Simple Web API</h3>
 						</header>
-						<h3><span class="firsttag tag html"></span><span class="tag css"></span><span class="tag csharp"></span></h3>
-						<p>A little bit about the project and what it is</p>
+						<h3><span class="firsttag tag csharp"></span><span class="tag api"></span><span class="tag web"></span></h3>
+						<p>A simple web API created in C# and .NET Core 6.0. The API has basic Create, Read, Update, and Delete functionality. Data is stored using entity framework in a Sqlite database.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">View Project Page</a></li>
+							<li><a href="https://github.com/eregot/FormulaOneAPI" target="_blank" class="button">View Project on Github</a></li>
 						</ul>
 					</div>
 				</section>
-				<!-- Project 3 -->
+				<!-- Project -->
 				<section id="one">
 					<div class="inner">
 						<header class="major alt style2">
-							<h3>Sample Project</h3>
+							<h3>Python Image Converter</h3>
 						</header>
-						<h3><span class="firsttag tag java"></span></h3>
-						<p>A little bit about the project and what it is</p>
+						<h3><span class="firsttag tag python"></span></h3>
+						<p>A Python program that converts a directory of images from png to jpg format.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">View Project Page</a></li>
+							<li><a href="https://github.com/eregot/PNGtoJPG" target="_blank" class="button">View Project on Github</a></li>
 						</ul>
+					</div>
+				</section>
+				<!-- Project -->
+				<section id="one" class="every-other">
+					<div class="inner">
+						<header class="major alt style2">
+							<h3>Python Jumping Game</h3>
+						</header>
+						<h3><span class="firsttag tag python"></span><span class="tag game"></span></h3>
+						<p>A simple jumping game created with Python and using the PyGame module. Jump and duck obsticles to get a high score.</p>
+						<ul class="actions">
+							<li><a href="https://github.com/eregot/Jumper" target ="_blank" class="button">View Project on Github</a></li>
+						</ul>
+					</div>
+				</section>
+				<!-- Project -->
+				<section id="one">
+					<div class="inner">
+						<header class="major alt style2">
+							<h3>Python Password Checker</h3>
+						</header>
+						<h3><span class="firsttag tag python"></span><span class="tag api"></span></h3>
+						<p>A Python program that checks if your password has ever been stolen in a data breach. Uses the haveibeenpwned.com api.</p>
+						<ul class="actions">
+							<li><a href="https://github.com/eregot/PasswordCheck" target="_blank" class="button">View Project on Github</a></li>
+						</ul>
+					</div>
+				</section>
+				<!-- Project -->
+				<section id="one" class="every-other">
+					<div class="inner">
+						<header class="major alt style2">
+							<h3>JavaScript Tile Shooter</h3>
+						</header>
+						<h3><span class="firsttag tag js"></span><span class="tag game"></span></h3>
+						<p>This is the game that is found on the bonus page of this portfolio website! Get rid of all of the blocks to win.</p>
+						<ul class="actions">
+							<li><a href="https://github.com/eregot/TileShooter" target="_blank" class="button">View Project on Github</a></li>
+						</ul>
+					</div>
+				</section>
+				<!-- Coming Soon -->
+				<section id="one">
+					<div class="inner">
+						<header class="major alt style2">
+							<h3>More Projects Coming Soon...</h3>
+						</header>
+						<h3><span class="firsttag tag python"></span><span class="tag csharp"></span><span class="tag js"></span><span class="tag web"></span><span class="tag api"></span><span class="tag game"></span></h3>
+						<p>I am constantly working on more projects and will be updating this page frequently. Thank you!</p>
 					</div>
 				</section>
 			</div>
@@ -108,4 +159,5 @@
 		<script src="static/js/util.js"></script>
 		<script src="static/js/main.js"></script>
 	</body>
+
 </html>

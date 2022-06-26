@@ -1,15 +1,18 @@
 <!DOCTYPE HTML>
 <html>
+
 	<head>
 		<title>Evan S. Regot | Resume</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="./static/css/main.css" />
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/x-icon">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Racing+Sans+One&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="./static/css/noscript.css" /></noscript>
 	</head>
+
 	<body class="is-preload">
 		<!-- Wrapper -->
 		<div id="wrapper">
@@ -36,11 +39,12 @@
 						<img src="./static/images/pic07.jpg" alt="" />
 					</span>
 					<header class="major">
-						<h1 style="font-family:'Press Start 2P', cursive; letter-spacing: -4px;">Resume</h1>
+						<h1 class="title">Resume</h1>
 					</header>
 					<div class="content">
 						<ul class="actions">
-							<li><a href="generic.html" class="button primary">Download Resume.pdf</a></li>
+							<li><a href="./static/regot_resume.pdf" class="button" download>Download .pdf copy</a></li>
+							<li><a href="./static/regot_resume.docx" class="button" download>Download .docx copy</a></li>
 						</ul>
 					</div>
 				</div>
@@ -52,10 +56,14 @@
 						<header class="major">
 							<h2>Programming Skills</h2>
 						</header>
-						<h3><a href="csharp.html" style="text-decoration: underline;">C#</a></h3>
-						<h3><a href="java.html" style="text-decoration: underline;">Java</a></h3>
-						<h3><a href="python.html" style="text-decoration: underline;">Python</a></h3>
-						<h3><a href="webdev.html" style="text-decoration: underline;">Responsive Web Development</a></h3>
+						<h3>Object Oriented Programming</h3>
+						<h3>Responsive Web Development</h3>
+						<h3>Git Version Control</h3>
+						<h3>C# / .NET</h3>
+						<h3>Python</h3>
+						<ul class="actions">
+							<li><a href="projects.html" class="button ">View Programming Projects</a></li>
+						</ul>
 					</div>
 				</section>
 				<section id="one">
@@ -114,4 +122,5 @@
 		<script src="./static/js/util.js"></script>
 		<script src="./static/js/main.js"></script>
 	</body>
+
 </html>

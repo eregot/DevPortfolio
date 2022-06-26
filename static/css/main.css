@@ -3795,25 +3795,93 @@ input, select, textarea {
 .csharp::before{
 	content:'C#';
 }
-.java{
+.game{
 	background-color: #ec8d81;
 }
-.java::before{
-	content: 'JAVA';
+.game::before{
+	content: 'GAME';
 }
-.html{
+.web{
 	background-color: #6fc3df;
 }
-.html::before{
-	content:'HTML5';
+.web::before{
+	content:'WEB DEV';
 }
-.css{
+.js{
 	background-color: #DDAF82;
 }
-.css::before{
-	content:'CSS3';
+.js::before{
+	content:'JAVASCRIPT';
+}
+.api{
+	background-color: #8d82c4;
+}
+.api::before{
+	content:'API';
 }
 
+.every-other{
+	background-color: #242943;
+}
+
+.title{
+	font-family:'Press Start 2P', cursive; 
+	letter-spacing: -4px;
+}
+/* BONUS GAME */
+.sorry{
+	display: none;
+}
+.hide{
+	display: none;
+}
+
+.start-button{
+	height: 100px;
+	width: 100%;	
+	text-align: center;
+}
+.start-button .button {
+	width: 20%;
+	margin-top: 20px;
+}
+.game-wrap{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	background-color: #2e3450;
+	align-items: center;
+	justify-content: center;
+}
+.game-grid{
+	position: absolute;
+	height: 400px;
+	width: 820px;
+	border: 1px solid black;
+}
+
+.tile{
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	background-color: #87c5a4;
+	border: 1px solid #242943;
+}
+
+.slider{
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	background-color: #e7b788;
+}
+
+.ball{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+	background-color: #6fc3df;
+}
 /* Menu */
 
 	#menu {
@@ -3986,3 +4054,24 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/*If the screen is too small for the game*/
+@media only screen and (max-width: 820px) {
+	.sorry{
+		display: flex;
+		justify-content: center;
+		align-items:center;
+		height: 100px;
+		background-color: #2e3450;
+	}
+	.start-button{
+		display: none;
+	}
+
+	.game-wrap{
+		display: none;
+	}
+	.game-grid{
+		display: none;
+	}
+}
